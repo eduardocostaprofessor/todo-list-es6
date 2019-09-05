@@ -1,2 +1,2 @@
-# todo-list-es6-
-Projeto baseado no todo-list antigo, porém utilizará as especificações JS ECMAScript 2015 acima
+# todo-list-es6+
+Projeto baseado no todo-list antigo ES5, porém utilizará as especificações ES6+ (a partir de ECMAScript 2015).
