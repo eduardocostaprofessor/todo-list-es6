@@ -1,0 +1,28 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "Projeto para aprendizado de ECMAScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "keywords": [
+    "todo",
+    "ecmascript",
+    "javascript",
+    "front-end"
+  ],
+  "author": "Eduardo Costa - github.com/eduardocostaprofessor",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
