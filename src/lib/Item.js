@@ -22,10 +22,10 @@ export default class Item {
     */
     novoItem() {
         let div = Helpers.ciraElementoDom('div');
-        let label = Helpers.ciraElementoDom('label', {}, `Item ${this.itens.length + 1}`);
+        let label = Helpers.ciraElementoDom('label', {}, `Item ${this.getItem().length + 1}`);
         let input = Helpers.ciraElementoDom('input', {
             type: 'text',
-            id: `item${this.itens.length}`,
+            id: `item${this.getItem().length}`,
             class: 'itens-lista'
         });
 
@@ -34,13 +34,8 @@ export default class Item {
             'aria-hidden': 'true',
             class: 'fa fa-minus-square-o fa-lg',
 
-            onclick: `apagaItem(${this.itens.length})`
-        }
-            // ,
-            // null,{
-            //     evt : 'click', fn: apagaItem
-            // }
-        );
+            onclick: `apagaItem(${this.getItem().length})`
+        });
 
         let br = Helpers.ciraElementoDom('br', { class: 'clear' });
 
@@ -56,7 +51,6 @@ export default class Item {
     }
 
     apagaItem(id) {
-        console.log(id);
         this.itens.splice(id, 1);
 
         //renomeia o label e o id
@@ -67,12 +61,5 @@ export default class Item {
             this.itens[i].children[1].setAttribute('id', `Item${i}`);
             this.itens[i].children[2].setAttribute('onclick', `apagaItem(${i})`);
         }
-
-        console.log(this.item);
-        
-
-        //    this.itens = this.getItem().filter((v, i) => {
-        //         return i !== id;
-        //     });
     }
 };
