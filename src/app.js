@@ -3,7 +3,7 @@ import ItemClass from './lib/Item';
 
 const Item = new ItemClass();
 
-/**
+/** 
     Função para gerar um novo item baseado no template
     <div>
         <label>Item 1</label>
