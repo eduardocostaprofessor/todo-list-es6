@@ -34,7 +34,7 @@ export default class Item {
             'aria-hidden': 'true',
             class: 'fa fa-minus-square-o fa-lg',
 
-            onclick: `apagaItem(${this.getItem().length})`
+            onclick: apagaItem(`${this.getItem().length}`)
         });
 
         let br = Helpers.ciraElementoDom('br', { class: 'clear' });
@@ -51,6 +51,7 @@ export default class Item {
     }
 
     apagaItem(id) {
+        console.log('aqui' + id)
         this.itens.splice(id, 1);
 
         //renomeia o label e o id

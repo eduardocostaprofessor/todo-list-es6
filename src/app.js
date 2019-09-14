@@ -8,7 +8,7 @@ const Item = new ItemClass();
     <div>
         <label>Item 1</label>
         <input type="text" id="item0" class="itens-lista">
-        <i onclick="apagaItem(this)" class="fa fa-minus-square-o fa-lg" aria-hidden="true" style="margin-left: 1%;"></i>
+        <i onclick="apagaItem()" class="fa fa-minus-square-o fa-lg" aria-hidden="true" style="margin-left: 1%;"></i>
         <br class="clear">
     </div>
  */
@@ -18,10 +18,10 @@ const novoItem = () => {
 
 //por que eu precisei pendurar em window? só assim funcionou
 window.apagaItem = function (id) {
-    
+    console.log(id);
     //apaga o item
     Item.apagaItem(id);
-    console.log(Item.getItem()); 
+    // console.log(Item.getItem()); 
     geraTemplateItens()   
 }
 
@@ -39,7 +39,7 @@ const geraTemplateItens = () => {
 
 const pesquisarNota = () => {
     const texto = document.getElementById('pesquisar').value.trim();
-    // console.log(texto);
+    console.log(texto);
 
 }
 
