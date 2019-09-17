@@ -1,3 +1,12 @@
+/**
+ * Este arquivo app representa a criação de um aplicativo todo-list para estudo dos 
+ * conceitos de ECMAScript, DOM, arrays objetos estruturas de decisão e laços de repetição 
+ * do curso de JavaScript criado por mim, 
+ *  Professor Eduardo costa: https://github.com/eduardocostaprofessor/
+ * 
+ * Projeto em desenvolvimento. Será integrada a uma API Nodejs posteriormente
+ * 
+ */
 import Helpers from './lib/Helpers';
 import ItemClass from './lib/Item';
 
@@ -39,8 +48,9 @@ const geraTemplateItens = () => {
     itens.forEach((item) => Helpers.agregaElemento(pai, item));
 }
 
-
-
+/**
+ * Função para pesquisa de notas no DOM
+ */
 const pesquisarNota = () => {
     const texto = document.getElementById('pesquisar').value.trim();
     console.log(texto);

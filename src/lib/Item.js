@@ -1,3 +1,7 @@
+/**
+ * Classe que representa as linhas do template para cadastro
+ * dos item do template 
+ */
 import Helpers from './Helpers';
 
 export default class Item {
@@ -18,7 +22,7 @@ export default class Item {
     }
 
     /**
-     *   Função para gerar um novo item baseado no template
+     *  Função para gerar uma nova linha/item baseado no template:
         <div>
             <label>Item 1</label>
             <input type="text" id="item0" class="itens-lista">
