@@ -34,7 +34,7 @@ export default class Item {
             'aria-hidden': 'true',
             class: 'fa fa-minus-square-o fa-lg',
 
-            onclick: apagaItem(`${this.getItem().length}`)
+            onclick: this.apagaItem(`${this.getItem().length}`)
         });
 
         let br = Helpers.ciraElementoDom('br', { class: 'clear' });

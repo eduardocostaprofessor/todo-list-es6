@@ -16,9 +16,19 @@ const novoItem = () => {
     if (Item.novoItem()) geraTemplateItens();
 }
 
-//por que eu precisei pendurar em window? só assim funcionou
+/*
+ * por quê eu precisei pendurar em window? só assim funcionou
+ * A intenção era usar somento o método apagaIten(id) da classe item.
+ * Mas não deu certo sem pindurar essa função abaixo em window.
+ * 
+ * Na função init() abaixo funciona como eu gostaria que funcionasse a apagaItem. Não precisei 
+ * pendurar em window porque os elementos já existem na tela. No caso dos elementos criados 
+ * dinamicamente não funciona.. acredito que por isso eu tive que pendurar a função apagaItem em
+ * window!
+ * 
+ * Pretendo tentar fazer uma espécie de .on() do jQuery. Se fosse com jQuery funcionaria!!!
+ */
 window.apagaItem = function (id) {
-    console.log(id);
     //apaga o item
     Item.apagaItem(id);
     // console.log(Item.getItem()); 
