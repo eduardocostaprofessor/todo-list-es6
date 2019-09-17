@@ -4,13 +4,7 @@ import ItemClass from './lib/Item';
 const Item = new ItemClass();
 
 /**
-    Função para gerar um novo item baseado no template
-    <div>
-        <label>Item 1</label>
-        <input type="text" id="item0" class="itens-lista">
-        <i onclick="apagaItem()" class="fa fa-minus-square-o fa-lg" aria-hidden="true" style="margin-left: 1%;"></i>
-        <br class="clear">
-    </div>
+ * Cria a linha do imput para cadastrar um novo item
  */
 const novoItem = () => {
     if (Item.novoItem()) geraTemplateItens();
@@ -56,8 +50,8 @@ const pesquisarNota = () => {
 //componentes de inicialização
 const init = () => {
     // document.getElementById('mais-item').addEventListener('click', novoItem);
-    Helpers.ciraListenerPorId('mais-item', 'click', novoItem);
-    Helpers.ciraListenerPorId('pesquisar', 'keyup', pesquisarNota);
+    Helpers.criaListenerPorId('mais-item', 'click', novoItem);
+    Helpers.criaListenerPorId('pesquisar', 'keyup', pesquisarNota);
 }
 //inicia as configurações iniciais
 init();

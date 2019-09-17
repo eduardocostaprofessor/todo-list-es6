@@ -1,6 +1,6 @@
 export default class {
 
-    static ciraListenerPorId(id, eventoAtrelado, nomeFuncao) {
+    static criaListenerPorId(id, eventoAtrelado, nomeFuncao) {
         document.getElementById(id).addEventListener(eventoAtrelado, nomeFuncao);
     }
 
@@ -10,7 +10,7 @@ export default class {
      * @param {object} atributos - array com as propriedades
      * @param {string} noTexto 
      */
-    static ciraElementoDom(elemento, atributos = {}, noTexto = null){
+    static criaElementoDom(elemento, atributos = {}, noTexto = null){
         const e = document.createElement(elemento);//cria elemento vazio
         
         //seta os atributos
